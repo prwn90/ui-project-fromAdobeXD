@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>UI Web Design</title>
+</head>
+<body>
+
+    <nav id="overlay">
+        <img src="images/close.svg" class="close-btn" id="close-menu">
+
+        <ul>
+            <li>
+                <a href="#">home</a>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </li>
+
+            <li>
+                <a href="#">apps</a>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </li>
+
+            <li>
+                <a href="#">about</a>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </li>
+
+            <li>
+                <a href="#">contact</a>
+                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <a href="#" class="logo">myWebsite</a>
+
+        <img src="images/menu.svg" class="menu-btn" id="open-menu">
+    </header>
+
+    <section>
+        <h1>nice web design</h1>
+    </section>
+
+    <script>
+
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+
+        document.getElementById('open-menu').addEventListener('click', function() {
+            overlay.classList.add('show-menu');
+        });
+
+        document.getElementById('close-menu').addEventListener('click', function() {
+            overlay.classList.remove('show-menu');
+        });
+
+
+    </script>
+    
+</body>
+</html>
